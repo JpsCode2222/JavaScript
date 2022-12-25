@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        .box{
+            height: 100px;width: 100px;background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ex setInterval & clearInterval -->
+    <div class="box"></div>
+    <button onclick="start1()">Start</button>
+    <button onclick="stop1()">Stop</button>
+    <script type="text/javascript">
+        var a = 0;
+        var id = "";
+        function start1(){
+            id=setInterval(demo,1000)
+        }
+        function stop1(){
+            clearInterval(id);
+        }
+        function demo(){
+            a+=50;
+            document.getElementsByClassName('box')[0].style.marginLeft=a+"px"
+        }
+    </script>
+</body>
+</html>

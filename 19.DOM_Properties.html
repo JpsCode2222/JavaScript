@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <!-- <h1 id="data"><mark>Welcome</mark></h1>
+    <h1 id="data1"></h1>
+    <script type="text/javascript">
+        // innerText ---- work only String 
+        var a = document.getElementById('data').innerText;
+        console.log(a);
+        document.getElementById('data1').innerText="<mark>Welcome</mark>"
+    </script>
+
+    <h1 id="d"><mark>Welcome</mark></h1>
+    <h1 id="d1"></h1>
+    <script type="text/javascript">
+        var b = document.getElementById('d').innerHTML;
+        console.log(a);
+        document.getElementById('d1').innerHTML="<mark>Welcome</mark>"
+    </script> -->
+
+
+    <!-- <style>
+        .box{height: 300px; width: 300px; background-color: red;}
+        .box1{height: 300px; width: 300px; background-color: green;}
+    </style>
+    <div id="data" class="box demo"></div>
+    <script type="text/javascript">
+        var a = document.getElementById('data').getAttribute('id');
+        console.log(a);
+        document.getElementById('data').setAttribute('class',"box1 demo")
+    </script> -->
+
+<!-- Unsolved -->
+    <!-- <form>
+        <input type="text" name="inp" value="a2z"><br><br>
+        <input type="text" name="inp" value="a2z@infotech"><br><br>
+        <input type="text" name="inp" value="25545646523"><br><br>
+    </form>
+    <script type="text/javascript">
+        // value
+        // get
+        var a = document.getElementsByClassName('inp')[0].value;
+        console.log(a);
+        var a = document.getElementsByClassName('inp')[1].value;
+        console.log(a);
+        var a = document.getElementsByClassName('inp')[2].value;
+        console.log(a);
+
+        // set
+        document.getElementsByClassName('inp')[0].value="A2Z infotechs";
+        document.getElementsByClassName('inp')[1].value="A2Z @info";
+        document.getElementsByClassName('inp')[2].value="654352145456";
+
+    </script> -->
+
+    <!-- <div class="box"></div>
+    <script type="text/javascript">
+        // style
+        // single
+        document.getElementsByClassName('box')[0].style.height="200px";
+        document.getElementsByClassName('box')[0].style.width="200px";
+        document.getElementsByClassName('box')[0].style.backgroundColor="yellow";
+        // Mix   
+        document.getElementsByClassName('box')[0].style="height:100px; width:100px; background:red";
+    </script> -->
+<!-- 
+    <input type="text"  id="inp" value="a2z" disabled>
+    <script type="text/javascript">
+        // hasAttribute(' ')
+        var a = document.getElementById('inp').hasAttribute('value');
+        alert(a);
+    </script> -->
+
+    <!-- <input type="text" class="inp" value="a2z" disabled><br><br>
+    <input type="text" class="inp" value="@gmail.com" disabled><br><br>
+    <input type="text" class="inp" value="635465456" disabled><br><br>
+    <button onclick="fun()">Edit</button>
+    <script type="text/javascript">
+        // removeAttribute(' ')
+        function fun(){
+            document.getElementsByClassName('inp')[0].removeAttribute('disabled');
+            document.getElementsByClassName("inp")[1].removeAttribute('disabled');
+            document.getElementsByClassName('inp')[2].removeAttribute('disabled');
+        }
+    </script> -->
+
+
+    <!-- <style type="text/css">
+    .box1{height:100px; width: 100px; background-color: blue;};
+    </style>
+    <div id="data" class="box1"></div><br>
+    <button onclick="cadd()">Add</button>
+    <button onclick="cremove()">Remove</button>
+    <button onclick="ctoggle()">Toggle</button>
+    <script type="text/javascript">
+        // classList --- add remove toggle
+        function cadd(){
+        document.getElementById('data').classList.add('box');
+        }
+        function cremove(){
+        document.getElementById('data').classList.remove('box1');
+        }
+        function ctoggle(){
+        document.getElementById('data').classList.toggle('box1');
+        }
+    </script> -->
+
+
+    <!-- Example of append() ----  Add items on last position  -->
+    <!-- <ul id="data">
+        <li>Tee</li>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Water</li>
+    </ul>
+    <button onclick="fun()">append</button>
+    <script type="text/javascript">
+        function fun(){
+        // Create list item
+        var cli = document.createElement('li');
+        // list item name
+        var li = document.createTextNode('Lassi');
+        cli.appendChild(li);
+        //Newly created list item add on last of list
+        document.getElementById('data').appendChild(cli);
+        }
+    </script> -->
+
+    <!-- Example of prepend() ----  Add item on First Position -->
+    <!-- <ul id="data">
+        <li>BMW</li>
+        <li>Merc</li>
+        <li>Audi</li>
+        <li>Ferrari</li>
+    </ul>
+    <button onclick="fun1()">Prepend</button>
+    <script type="text/javascript">
+        function fun1(){
+        // Create list item
+        var cli = document.createElement('li');
+        // list item name
+        var li = document.createTextNode('Lamborghini');
+        cli.appendChild(li);
+        //Newly created list item add on last of list
+        document.getElementById('data').prepend(cli);
+        }
+    </script> -->
+
+    
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <!-- <h1 id="d1">Welcome</h1>
+    <h1 id="d2">js</h1>
+    <button onclick="show()">Click</button>
+    <script type="text/javascript">
+        // Dom  --- document Object Model
+        var d=document;
+        console.log(d);
+        var d=document.head;
+        console.log(d);
+        var d=document.body;
+        console.log(d);
+
+        function show(){
+        // get
+            var data1 = document.getElementById('d1').innerHTML;
+            var data2 = document.getElementById('d2').innerHTML;
+            console.log(data1);
+            console.log(data2);
+        
+        // set
+        document.getElementById('d1').innerHTML=data2;
+        document.getElementById('d2').innerHTML=data1;
+        }
+    </script> -->
+
+    <!-- <h1 class="data">HTML</h1>
+    <h1 class="data">CSS</h1>
+    <h1 class="data1">Bootstrap</h1>
+    <h1 class="data">JS</h1>
+    <script type="text/javascript">
+        // by Class
+        // get
+        var a = document.getElementsByClassName('data')[2].innerHTML;
+        console.log(a);
+        //set
+        document.getElementsByClassName('data')[0].innerHTML="Welcome HTML";
+        document.getElementsByClassName('data')[1].innerHTML="Welcome CSS";
+        document.getElementsByClassName('data1')[0].innerHTML="Welcome BOOTSTRAP";
+        document.getElementsByClassName('data')[2].innerHTML="Welcome js";
+    </script> -->
+
+    <!-- solve -->
+       -->
+
+    <!-- <p>Welcome</p>
+    <p>Welcome</p>
+    <p>Welcome</p>
+    <h1>Welcome</h1>
+    <p>Welcome</p>
+    <p>Welcome</p>
+    <p>Welcome</p>
+    <script type="text/javascript">
+        // by tag name
+        // get
+        var a = document.getElementsByTagName('p');
+        console.log(a);
+        // set
+        var b = a[2].innerHTML="Welcome js";
+        console.log(b);
+    </script> -->
+
+    <!-- <form name="form" action="POST">
+        <input type="text" name="name" id=""><br><br>
+        <input type="text" name="email" id="" value="A@gmail.com"><br><br>
+        <input type="text" name="email" id="" value="B@gmail.com"><br><br>
+        <input type="text" name="mobile" id="" value="24898375"><br><br>
+    </form>
+    <script type="text/javascript">
+        // By name
+        // get
+        var a = document.getElementsByName('email');
+        for(var i=0; i<a.length; i++){
+            console.log(a[i].value);
+        }
+        console.log(a);
+        document.getElementsByName('email')[1].value="C@gmail.com";
+        console.log(a[1].value)
+        // set
+        var b = a[0].innerHTML="B@gmial.com";
+        console.log(b);
+
+        var c = document.getElementsByName('mobile');
+        console.log(c);
+        console.log(document.form.mobile.value)
+    </script> -->
+
+    <!-- <p>js</p>
+    <p id="data">js</p>
+    <p class="data">js</p>
+    <p>js</p>
+    <p class="data">js</p>
+<script type="text/javascript">
+    var a = document.querySelector('p');
+    console.log(a);
+    var b = document.querySelectorAll('p');
+    console.log(b);
+</script> -->
+</body>
+</html>

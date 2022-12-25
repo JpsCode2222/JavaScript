@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyboardEvents</title>
+</head>
+<!-- <body id="box" onkeypress="keypress()" onkeydown="keydown()" onkeyup="keyup()">
+
+    <script type="text/javascript">
+        function keypress(){
+            document.getElementById('box').style.background="red";
+        }
+        function keydown(){
+            document.getElementById('box').style.background="blue";
+        }
+        function keyup(){
+            document.getElementById('box').style.background="pink";
+        }
+    </script>
+    
+</body> -->
+<body>
+    <br>
+    <input type="number" onkeyup="mul(this.value,qnt.value)" id="rate" placeholder="rate"><br><br>
+    <input type="number" onkeyup="mul(rate.value,this.value)" id="qnt" placeholder="qnt"><br><br>
+    <input type="number" id="total" placeholder="total" readonly><br>
+    <script type="text/javascript">
+        function mul(a,b){
+            var c = Number(a)*Number(b);
+            document.getElementById('total').value=c;
+        }
+    </script>
+</body>
+</html>

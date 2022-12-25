@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statement</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+/*      //Control Statement
+
+       
+        // 1} if Statement            2}  if else Statement                 3} if else if else                 4} Switch (Operation){
+
+         Syntax                    // Syntax                                 //Syntax                                    case "+":
+                                                                                                                                //code
+        if(condition){               if (Condition) {                       if (condition){                                     break;
+            //code                       // True                                // Code
+        }                             }                                      }                                             .
+                                                                                                                           .
+                                    else{                                   else if (condition){                           .
+                                        // False                                     // Code                              default:
+                                    }                                        }                                                //code
+                                                                             .                                                break;                          
+                                                                             .                                         
+                                                                             .         
+                                                                             .
+                                                                             .
+                                                                             else{
+                                                                                  // Code
+                                                                               }
+ */
+       
+            
+                
+                 
+               
+            
+//--------------------------------------------------
+
+        // 1} if Statement
+
+        /* Syntax
+
+        if(condition){
+            //code
+        }
+
+        */
+
+
+        // var a123 = "js";
+        // if(a123 == "js")
+        // {
+        //     document.write("Welcome to "+a123);
+        // }
+
+        // //  Eg 1}
+        // var shop = 5000;
+        // var dis = 0;
+        // if(shop >= 5000){
+        //     dis = 10
+        // }
+        // var disamt = shop * dis / 100;
+        //     var total = shop -disamt;
+        //     document.write("<br> Total shoping : "+shop);
+        //     document.write("<br> Total Discount "+dis+" % : "+disamt);
+        //     document.write("<br> Net Total : "+total);
+        
+        // //  Eg 2}
+        // var gen ="Male";
+        // if(gen=="Male"){
+        //     document.write("HE");
+        // }
+        // if(gen=="Female"){
+        //     document.write("SHE");
+        // }
+
+        // //  Eg 3}
+        // var Voter = 20;
+        // if(Voter >= 18){
+        //     document.write("You are eligible");
+        // }
+        // if(Voter < 18){
+        //     document.write("You are not eligible")
+        // }
+
+        // //  Eg 4}
+        // var num = 5;
+        // if(num%2 == 0){
+        //     document.write("Number is Even");
+        // }
+        // if(num%2 != 0){
+        //     document.write("Number is Odd");
+
+
+//---------------------------------------------------
+        // // Home Work Solve
+        // // Q 1}
+        // var time = 19;
+        // if(time<=10){
+        //     document.write("Good Morning");
+        // }
+        // if(time<=18 && time>10){
+        //     document.write("Good Afternoon");
+        // }
+        // if(time<=20 && time>18){
+        //     document.write("Good Evening");
+        // }
+        // if(time>20){
+        //     document.write("Good Night");
+        // }
+
+        // // Q 2}
+        // var Voter = 21;
+        // if(Voter >= 18){
+        //     document.write("You are eligible");
+        // }
+        // if(Voter < 18){
+        //     document.write("You are not eligible")
+        // } 
+
+        // // Q 3}
+        // var num1 = 10;
+        // var num2 = 20;
+        // var Operation = "Add"  // Add , Sub , Mul , Div , Mod
+        // if(Operation=="Add"){
+        //     document.write("Addition is : "+(num1+num2));
+        // }
+        // if(Operation=="Sub"){
+        //     document.write("Substraction is : "+(num1-num2));
+        // }
+        // if(Operation=="Mul"){
+        //     document.write("Multiplication is : "+(num1*num2));
+        // }
+        // if(Operation=="Div"){
+        //     document.write("Division is : "+(num1/num2));
+        // }
+        // if(Operation=="Mod"){
+        //     document.write("Modulo is : "+(num1%num2));
+        // }
+        // if(Operation!="Add" && Operation!="Sub" && Operation!="Mul" && Operation!="Div" && Operation!="Mod"){
+        //     document.write("Invalid Operation");
+        // }
+        
+        // // Q 4}
+        // var Income = 100000;
+        // if(Income<200000){
+        //     var tax = 1;
+        //     var TotalTax=Income*tax/100;
+        //     var TotalAmt=Income-TotalTax
+        //     document.write("Total Tax : "+TotalAmt);
+        // }
+        // if(Income<400000){
+        //     var tax = 2;
+        //     var TotalTax=Income*tax/100;
+        //     var TotalAmt=Income-TotalTax;
+        //     document.write("Total Tax : "+TotalAmt);
+        // }
+        // if(Income>400000 && Income<1000000){
+        //     var tax = 8;
+        //     var TotalTax=Income*tax/100;
+        //     var TotalAmt=Income-TotalTax;
+        //     document.write("Total Tax : "+TotalAmt);
+        // }
+
+        // // Q 5}
+        // var Variable = "h";
+        // if(Variable%1===0 && Variable===Variable){
+        //     document.write("Integer");
+        // }
+        // if(Variable%1!==0 && Variable!==Variable){
+        //     document.write("Float");
+        // }
+        // if(Variable==String){
+        //     document.write("Char");
+        // }
+           
+        // // Q 6}
+        // var str = "a";
+        // if(str=="a"||str=="A"||str=="e"||str=="E"||str=="i"||str=="I"||str=="o"||str=="O"||str=="u"||str=="U"){
+        //     document.write("Vovel");
+        // }
+        // if(str!="a"||str!="A"||str!="e"||str!="E"||str!="i"||str!="I"||str!="o"||str!="O"||str!="u"||str!="U"){
+        //     document.write("Not vovels");
+        // }
+
+        // // Q 7} toLowercase()  & toUppercase()
+        // var alphabate = 'Z';
+        // if(alphabate.toLowerCase() === alphabate){
+        //     document.write("Lowercase");
+        // }
+        // if(alphabate.toUpperCase()=== alphabate){
+        //     document.write("Uppercase");
+        // }
+        
+//---------------------------------------------------
+
+        /*  2}  if else Statement
+        // Syntax
+            
+                if (Condition) {
+                    // True
+                }
+                else{
+                    // False
+                }
+        */
+
+
+
+        // // Eg 1} 
+        // var str="js";
+        // if(str=="js"){
+        //     document.write("Welcome js");
+        // }
+        // else{
+        //     document.write("Wrong Data");
+        // }
+       
+        // // Eg 2}
+        // var no=30;
+        // if(no%2==0){
+        //     document.write("Even");
+        // }
+        // else{
+        //     document.write("Odd");
+        // }
+            
+        // // // Eg 3}
+        // var Voter = 18;
+        // if(Voter>18){
+        //     document.write("Eligible for Voting");
+        // }
+        // else{
+        //     document.write("Not Eligible for Voting");
+        // }
+
+        // // // Eg 4}
+        // var gander = "male";
+        // if(gander==male){
+        //     document.write("Male");
+        // }
+        // else{
+        //     document.write("Female");
+        // }
+
+        // // Eg 5}
+        // var no1 = 100;
+        // var no2 = 1000;
+        // if(no1>no2){
+        //     document.write("No1");
+        // }
+        // else{
+        //     document.write("No2");
+        // }
+
+        // // Eg 6}
+        // var shop = 4000;
+        // var dis = 0;
+        // if(shop >= 5000){
+        //     dis = 10
+        //     var disamt = shop * dis / 100;
+        //     var total = shop -disamt;
+        //     document.write("<br> Total shoping : "+shop);
+        //     document.write("<br> Total Discount "+dis+" % : "+disamt);
+        //     document.write("<br> Net Total : "+total);
+        // }
+        // else{
+        //     document.write("Total shoping : "+shop);
+        //     document.write("<br> Net Total : "+shop);
+        // }
+
+        // // Eg 7}
+        // var n1=201;
+        // var n2=201;
+        // var n3=201;
+        // if(n1>=n2 && n1>=n2){
+        //     document.write("N1 is greater");
+        // }
+        // else if(n2>=n1 && n2>=n3){
+        //     document.write("N2 is greater");
+        // }
+        // else if(n3>=n1 && n3>=n2){
+        //     document.write("N3 is greater");
+        // }
+        // else{
+        //     document.write("Worng Process");
+        // }
+
+
+//----------------------------------------------------------------------
+
+        /* 
+        3} if else if else
+        //Syntax
+
+        if (condition){
+            // Code
+        }
+        else if (condition){
+            // Code
+        }
+        else{
+            // Code
+        }
+
+        */
+
+
+
+        // // Eg 8}
+        // var shop = 1000;
+        // var dis = 0;
+        // if (shop <= 5000){
+        //     dis = 0;
+        //     document.write("Net Total : "+shop);
+        // }
+        // else if(shop>5000 && shop<=10000){
+        //     dis = 10;
+        //     var disamt = shop * dis / 100;
+        //     var total = shop -disamt;
+        //     document.write("<br> Total shoping : "+shop);
+        //     document.write("<br> Total Discount "+dis+" % : "+disamt);
+        //     document.write("<br> Net Total : "+total);
+        // }
+        // else if(shop>10000 && shop<=15000){
+        //     dis = 20;
+        //     var disamt = shop * dis / 100;
+        //     var total = shop -disamt;
+        //     document.write("<br> Total shoping : "+shop);
+        //     document.write("<br> Total Discount "+dis+" % : "+disamt);
+        //     document.write("<br> Net Total : "+total);
+        // }
+        // else if(shop>15000 && shop<=25000){
+        //     dis = 25;
+        //     var disamt = shop * dis / 100;
+        //     var total = shop -disamt;
+        //     document.write("<br> Total shoping : "+shop);
+        //     document.write("<br> Total Discount "+dis+" % : "+disamt);
+        //     document.write("<br> Net Total : "+total);
+        // }
+        // else if(shop>25000){
+        //     dis = 30;
+        //     var disamt = shop * dis / 100;
+        //     var total = shop -disamt;
+        //     document.write("<br> Total shoping : "+shop);
+        //     document.write("<br> Total Discount "+dis+" % : "+disamt);
+        //     document.write("<br> Net Total : "+total);
+        // }
+        // else{
+        //     document.write("Invalid Ammount!!!");
+        // }
+
+//----------------------------------------------------------------------------------------
+        // // Home work Solved 9-11-22
+
+
+        // // Eg 1}  Holiday
+        // var day = "Sunday";
+        // if (day=="Sunday"){
+        //   document.write("Holiday");
+        // }
+        // else if (day=="Monday"){
+        //     document.write("Not Holiday");
+        // }
+        // else if (day=="Tuesday"){
+        //     document.write("Not Holiday");
+        // }
+        // else if (day=="Wednesday"){
+        //     document.write("Not Holiday");
+        // }
+        // else if (day=="Thursday"){
+        //     document.write("Not Holiday");
+        // }
+        // else if (day=="Friday"){
+        //     document.write("Not Holiday");
+        // }
+        // else if (day=="Saturday"){
+        //     document.write("Not Holiday");
+        // }
+        // else{
+        //     document.write("Wrong Day!!!")
+        // }
+
+        // // 2}  Leap Year
+        // var Year = 2022;
+        // if(Year%100==0 && Year%400==0 || Year%100!=0 && Year%4==0){
+        //     document.write("Leap Year");
+        // }
+        // else{
+        //     document.write("Not Leap Year");
+        // }
+
+        // // 3} Vowel
+        // var str="a";
+        // if(str=="a"||str=="e"||str=="i"||str=="o"||str=="u"){
+        //     document.write("Vowel");
+        // }
+        // else{
+        //     document.write("Not Vowel");
+        // }
+
+        // // 4}
+        // var Score = 90;
+        // if(Score>=90){
+        //     document.write("A Grade");
+        // }
+        // else if(Score>=80){
+        //     document.write("B Grade");
+        // }
+        // else{
+        //     document.write("Invalid Score");
+        // }
+
+        // // 5}
+        // var No = 1;
+        // if(No==1){
+        //     document.write("Monday");
+        // }
+        // else if(No==2){
+        //     document.write("Monday");
+        // }
+        // else if(No==3){
+        //     document.write("Tuesday");
+        // }
+        // else if(No==4){
+        //     document.write("Wednesday");
+        // }
+        // else if(No==5){
+        //     document.write("Thursday");
+        // }
+        // else if(No==6){
+        //     document.write("Friday");
+        // }
+        // else if(No==7){
+        //     document.write("Saturday");
+        // }
+
+        // // 6}
+        // var Month = 12;
+        // if(Month==1){
+        //     document.write("31 Days");
+        // }
+        // else if(Month==2){
+        //     document.write("28 Days");
+        // }
+        // else if(Month==3){
+        //     document.write("31 Days");
+        // }
+        // else if(Month==4){
+        //     document.write("30 Days");
+        // }
+        // else if(Month==5){
+        //     document.write("31 Days");
+        // }
+        // else if(Month==6){
+        //     document.write("30 Days");
+        // }
+        // else if(Month==7){
+        //     document.write("31 Days");
+        // }
+        // else if(Month==8){
+        //     document.write("31 Days");
+        // }
+        // else if(Month==9){
+        //     document.write("30 Days");
+        // }
+        // else if(Month==10){
+        //     document.write("31 Days");
+        // }
+        // else if(Month==11){
+        //     document.write("30 Days");
+        // }
+        // else if(Month==12){
+        //     document.write("31 Days");
+        // }
+        // else{
+        //     document.write("Wrong Month");
+        // }
+
+        // // 7}
+        // var Marks = 70;
+        // if(Marks<25){
+        //     document.write("Grade F");
+        // }
+        // else if(Marks>=25 && Marks<45){
+        //     document.write("Grade E");
+        // }
+        // else if(Marks>=45 && Marks<50){
+        //     document.write("Grade D");
+        // }
+        // else if(Marks>=50 && Marks<60){
+        //     document.write("Grade E");
+        // }
+        // else if(Marks>=60 && Marks<80){
+        //     document.write("Grade B");
+        // }
+        // else if(Marks>=80){
+        //     document.write("Grade A");
+        // }
+        // else{
+        //     document.write("Invalid Marks");
+        // }
+
+        // // 8}
+        //  var Month = "January";
+        // if(Month=="January"){
+        //     document.write("31 Days");
+        // }
+        // else if(Month=="February"){
+        //     document.write("28 Days");
+        // }
+        // else if(Month=="March"){
+        //     document.write("31 Days");
+        // }
+        // else if(Month=="April"){
+        //     document.write("30 Days");
+        // }
+        // else if(Month=="May"){
+        //     document.write("31 Days");
+        // }
+        // else if(Month=="June"){
+        //     document.write("30 Days");
+        // }
+        // else if(Month=="July"){
+        //     document.write("31 Days");
+        // }
+        // else if(Month=="August"){
+        //     document.write("31 Days");
+        // }
+        // else if(Month=="September"){
+        //     document.write("30 Days");
+        // }
+        // else if(Month=="October"){
+        //     document.write("31 Days");
+        // }
+        // else if(Month=="November"){
+        //     document.write("30 Days");
+        // }
+        // else if(Month=="December"){
+        //     document.write("31 Days");
+        // }
+        // else{
+        //     document.write("Wrong Month");
+        // }
+
+        // // 9}  Fahrenheit -- Celsius
+        // var Temp=10;
+        // var Far = Temp;
+        // if(Temp==Far){
+        //     document.write("Fahrenheit to Celsius : "+(Far-32*5/9)+" C");
+        // }
+        // else if(Temp==Far){
+        //     document.write("Celsius to Fahrenheit : "+(Far-32*5/9)+" C");
+        // }
+
+        // // 10}
+        // var No = 10;
+        // if(No>0){
+        //     document.write("Positive");
+        // }
+        // else if(No<0){
+        //     document.write("Negative");
+        // }
+        // else if(No==0){
+        //     document.write("Zero");
+        // }
+        // else{
+        //     document.write("Invalid Number");
+        // }
+
+        // // 11}
+        // var no = 100;
+        // var pno = 20;
+        // if(no%pno==0){
+        //     document.write("Divisible");
+        // }
+        // else if(no%pno!=0){
+        //     document.write("Not Divisible");
+        // }
+        // else{
+        //     document.write("Invalid Number");
+        // }
+
+        // 12} toLowercase()  & toUppercase()
+        // var alphabate = 'a';
+        // if(alphabate.toLowerCase() === alphabate){
+        //     document.write("Lowercase");
+        // }
+        // else if(alphabate.toUpperCase()=== alphabate){
+        //     document.write("Uppercase");
+        // }
+        // else{
+        // document.write("Invalid latter");
+        // }
+
+        // // 13}
+        // var No1=105;
+        // var No2=100;
+        // var No3=1005;
+        // if(No1>No2 && No1>No3 && No2<No3){
+        //     document.write(" "+No1+">"+No3+">"+No2);
+        // }
+        // else if(No1>No2 && No1>No3 && No2>No3){
+        //     document.write(" "+No1+">"+No2+">"+No3);
+        // }
+        // else if(No2>No1 && No2>No3 && No1>No3){
+        //     document.write(" "+No2+">"+No1+">"+No3);
+        // }
+        // else if(No2>No1 && No2>No3 && No1<No3){
+        //     document.write(" "+No2+">"+No3+">"+No1);
+        // }
+        // else if(No3>No1 && No3>No2 && No1>No2){
+        //     document.write(" "+No3+">"+No1+">"+No2);
+        // }
+        // else if(No3>No1 && No3>No2 && No1<No2){
+        //     document.write(" "+No3+">"+No2+">"+No1);
+        // }
+        // else{
+        //     document.write("Same Numbers");
+        // }
+
+        // // 14}
+        // var Age=10;
+        // if(Age<5){
+        //     document.write("Child");
+        // }
+        // else if(Age<15){
+        //     document.write("TeenAge");
+        // }
+        // else if(Age>=15 && Age<80){
+        //     document.write("Adult");
+        // }
+        // else{
+        //     document.write("Invalid Age");
+        // }
+
+        // // 15}
+        // var Age = 10;
+        // if(Age>=18){
+        //     document.write("Eligible for Vaccine");
+        // }
+        // else if(Age<18){
+        //     document.write("Not Eligible for Vaccine");
+        // }
+        // else{
+        //     document.write("Invalid Age");
+        // }
+
+        // // 16}
+        // var a = 10;
+        // var b = 20;
+        // if(a>b){
+        //     document.write(a+" is Greater");
+        // }
+        // else if(a<b){
+        //     document.write(b+" is Greate");
+        // }
+        // else{
+        //     document.write("Same Number");
+        // }
+
+        // // 17}
+        // var City = "Pune";
+        // if(City=="Pune"){
+        //     document.write("100 KM");
+        // }
+        // else if(City=="Nagar"){
+        //     document.write("0 KM");
+        // }
+        // else if(City=="Nashik"){
+        //     document.write("150 KM");
+        // }
+        // else if(City=="Sangamner"){
+        //     document.write("80 KM");
+        // }
+        // else if(City=="Kopargoan"){
+        //     document.write("120 KM")
+        // }
+        // else{
+        //     document.write("City not found");
+        // }
+
+        // // 18}
+        // var Fuellevel = 20000;
+        // var EngineTemp = 2500;
+        // if(Fuellevel>=20000 && EngineTemp>=2500){
+        //     document.write("Full Tank , Engine Good");
+        // }
+        // else if(Fuellevel>=10000 && EngineTemp<2500){
+        //     document.write("Fuel level above 50% , Engine Goods");
+        // }
+        // else if(Fuellevel>=5000 && EngineTemp<2500){
+        //     document.write("Fuel level is above 25% , Engine Good");
+        // }
+        // else if(Fuellevel<5000 || EngineTemp>=2500){
+        //     document.write("Check fuel level , Engine running hot");
+        // }
+        // else if(Fuellevel<=1000 || EngineTemp>3500){
+        //     document.write("Engine failluar imminebt !!!");
+        // }
+        // else{
+        //     document.write("Fuel and Engine status pending");
+        // }
+
+        // // 19}
+        // var side1=10;
+        // var side2=20;
+        // var side3=30;
+        // if(side1==side2 && side2==side3){
+        //     document.write("Equilateral Triangle");
+        // }
+        // else if(side1==side2 || side2==side3 || side3==side1){
+        //     document.write("Isosceles Triangle");
+        // }
+        // else if(side1!=side2 || side1!=side3 || side2!=side3){
+        //     document.write("Scalen Traingle");
+        // }
+        // else{
+        //     document.write("Invalid Sides");
+        // }
+
+        // // 20}
+        // var Num=100;
+        // var ProvidedNum=4;
+        // if(Num%ProvidedNum==0){
+        //     document.write("Divisible");
+        // }
+        // else if(Num%ProvidedNum!=0){
+        //     document.write("Not Divisible.");
+        // }
+        // else{
+        //     document.write("Enter valid Number");
+        // }
+
+        // // 21}
+        // var Num = 9;
+        // if(Num<1){
+        //     document.write("Num is less than 1");
+        // }
+        // else if(Num==1){
+        //     document.write("Not Prime");
+        // }
+        // else if(Num==2){
+        //     document.write("Prime");
+        // }
+        // else if(Num>2){
+        //     var a=2;
+        //     while(a<Num){
+        //         var P = Num % a;
+        //         if(P!=0){
+        //             document.write("Prime");
+        //             break;
+        //         }
+        //         else{
+        //             document.write("Not Prime")
+        //             break;
+        //         }
+        //         a++;
+        //     }
+        // }
+        // else{
+        //     document.write("Invalid Number");
+        // }
+
+        // // 22}
+        // var a=1;
+        // var b=-6;
+        // var c=9;
+        // var root1;
+        // var root2;
+        // // Formula discriminant
+        // var discriminant=b*b-(4*a*c);
+        // if(discriminant>0){
+        //     // Formulas
+        //     root1=(-b+Math.sqrt(discriminant))/(2*a);
+        //     root1=(-b-Math.sqrt(discriminant))/(2*a);
+        //     // Result
+        //     document.write("Roots of Quadratic eqtn ara : "+root1+" & "+(root2));
+        // }
+        // else if(discriminant==0){
+        //     root1=root2=-b/(2*a);
+        //     document.write("Roots of Quadratic equt ara : "+root1+" & "+(root2));
+        // }
+        // else{
+        //     var RealPart = (-b/(2*a)).toFixed(2);
+        //     var ImagPart = (Math.sqrt(-discriminant)/(2*a)).toFixed(2);
+        //     document.write("Roots of Quadratic equt are : "+root1+" & "+(root2));
+        // }
+
+        // // 23}
+        // var Height = 5; //Feet
+        // var Weight = 90;
+        // if(Height<=5 && Weight<=60){
+        //     document.write("Healthy");
+        // }
+        // else if(Height<5 && Weight>60){
+        //     document.write("Not Healthy ! Keep Exersice.");
+        // }
+        // else if(Height>5 && Height<6 && Weight>50 && Weight<80){
+        //     document.write("Healthy");
+        // }
+        // else if(Height>6 && Height<7 && Weight<120){
+        //     document.write("Healthy");
+        // }
+        // else{
+        //     document.write("Not Healthy ! Keep Exersice.");
+        // }
+
+        // // 24}
+        // var BuyPrice = 1000;
+        // var SellPrice = 150;
+        // var Profit;
+        // if(BuyPrice<SellPrice){
+        //     Profit=SellPrice-BuyPrice;
+        //     document.write("Profit : "+Profit);
+        // }
+        // else if(BuyPrice>SellPrice){
+        //     Profit=SellPrice-BuyPrice;
+        //     document.write("Loss : "+Profit);
+        // }
+        // else if(BuyPrice==SellPrice){
+        //     document.write("Not Loss Not Profit");
+        // }
+        // else{
+        //     document.write("Enter Valid Price");
+        // }
+
+        // // 25}
+        // var Speed = 10;  // km/hr
+        // var Time = 400;   //hr
+        // var Distance;   //km
+        // if(Speed<Time){
+        //     Distance=Speed*Time;
+        //     document.write("Distance  : "+Distance+" Km");
+        // }
+        // else if(Speed>Time){
+        //     Distance=Speed*Time;
+        //     document.write("Distance : "+Distance+" Km");
+        // }
+        // else{
+        //     document.write("Invalid Speed or Time")
+        // }
+
+        // // 26}// Dest --> Nagar , Savedi , Sakat , Loni , Karjat
+        // var i=0;
+        // var Dist;
+        // var Destination="Nagar";
+        // if(Destination=="Nagar"){
+        //     Dist = 30 + i;
+        //     document.write("Distance is : "+Dist+" Km");
+        // }
+        // else if(Destination=="Savedi"){
+        //     Dist = 20 + i;
+        //     document.write("Distance is : "+Dist+" Km");
+        // }
+        // else if(Destination=="Sakat"){
+        //     Dist = 10 + i;
+        //     document.write("Distance is : "+Dist+" Km");
+        // }
+        // else if(Destination=="Loni"){
+        //     Dist = 40 + i;
+        //     document.write("Distance is : "+Dist+" Km");
+        // }
+        // else{
+        //     document.write("Invalid Destination !!!");
+        // }
+
+        // // 27}
+        // var num = 5;
+        // var Fact=1;
+        // if(num==0){
+        //     document.write("0");
+        // }
+        // else if(num==1){
+        //     document.write("1");
+        // }
+        // else if(num>=2){
+        //     var a=1;
+        //     while(a<=num){
+        //         Fact = Fact * a;
+        //         a++
+        //     }
+        //     document.write("Factorial is : "+Fact);
+        // }
+        // else{
+        //     document.write("Invalid Number !!!");
+        // }
+
+        // // 28}
+        // Day = "Sunday";
+        // if(Day=="Monday"){
+        //     document.write("Working hours : 7+ hrs");
+        // }
+        // else if(Day=="Tuesday"){
+        //     document.write("Working hours : 7+ hrs");
+        // }
+        // else if(Day=="Wednesday"){
+        //     document.write("Working hours : 7+ hrs");
+        // }
+        // else if(Day=="Thursday"){
+        //     document.write("Working hours : 7+ hrs");
+        // }
+        // else if(Day=="Friday"){
+        //     document.write("Working hours : 7+ hrs");
+        // }
+        // else{
+        //     // Wekends
+        //     document.write("Wekend Days !!!");
+        // }
+
+        // // 29}
+        // var char = "U";
+        // if(char=="A" || "E" || "I" || "O" || "U" || "a" || "e" || "i" || "o" || "u"){
+        //     document.write("Vowel");
+        // }
+        // else{
+        //     document.write("Constant");
+        // }
+
+        // // 30}
+        // var num = 5;
+        // var n1 = 0;
+        // var n2 = 1;
+        // var nxt; 
+        // document.write(n1);
+        // document.write(n2);
+        // nxt=n1+n2;
+        // while(nxt<=num){
+        //     document.write(nxt);
+        //     n1=n2;
+        //     n2=nxt;
+        //     nxt=n1+n2;
+        // }
+
+        // // 31}
+        // var Distance = 20 // in km
+        // var Milage = 5 // miles per gallon
+        // var costoffule = 100 //rupee per gallon
+        // if(Distance>Milage){
+        //     var totalCofF= (Distance/Milage)*costoffule;
+        //     document.write("Total cost of fuel : "+totalCofF+"💸");
+        // }
+        // else{
+        //     document.write("Invalid Distance");
+        // }
+
+        // // 32}
+        // var num = 121;
+        // var temp = num;
+        // var Add=0;
+        // while(num>0){
+        //     var rem = num%10;
+        //     num = parseInt(num/10);
+        //     Add = Add * 10 + rem;
+        // }
+        // if(Add==temp){
+        //     document.write("Palindrom");
+        // }
+        // else{
+        //     document.write("Not Pallindrom");
+        // }
+
+        // // 33}
+        // var num1 = 100;
+        // var num2 = 200;
+        // if(num1>num2){
+        //     document.write("Number 1st is greater");
+        // }
+        // else{
+        //     document.write("Number 2nd is greater");
+        // }
+
+//---------------------------------------------------------------------------
+        // 3} Switch case
+        //Syntax
+        /*
+            switch (Operation){
+                case 'a':
+                    // Code
+                    break;
+                    .
+                    .
+                    .
+                    .
+                default:
+                    //Code
+                    break;
+            }
+        */
+
+        // // Eg 1}
+        // var a=20;
+        // var b=20;
+        // var op="+";
+        // switch(op){
+        //     case "+":
+        //         document.write("Addition is : "+(a+b));
+        //         break;
+        //     case "-":
+        //         document.write("Substraction is : "+(a-b));
+        //         break;
+        //     case "*":
+        //         document.write("Multiplication is : "+(a*b));
+        //         break;
+        //     case "/":
+        //         document.write("Division is : "+(a/b));
+        //         break;
+        //     default:
+        //         document.write("Invalid Operator!!!");
+        //         break;
+        // }
+        // // Eg 2}
+        // var color = 'i';
+        // switch(color){
+        //     case 'r':
+        //         document.getElementById('bg').style='background:red';
+        //         break;
+        //     case 'y':
+        //         document.getElementById('bg').style='background:yellow';
+        //         break;
+        //     case 'o':
+        //         document.getElementById('bg').style='background:orange';
+        //         break;
+        //     case 'v':
+        //         document.getElementById('bg').style='background:voilet';
+        //         break;
+        //     case 'i':
+        //         document.getElementById('bg').style='background:indigo';
+        //         break;
+        //     default:
+        //         document.getElementById('bg').style='background:silver';
+        //         break;
+        // }
+         
+
+    </script>
+</body>
+</html>

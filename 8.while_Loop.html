@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+    <table id="tb"></table>
+    <script type="text/javascript">
+
+        // // while loop
+        // var a = 1;
+        // while(a<=5){
+        //     document.write("<br>Welcome to js");
+        //     a++;
+        // }
+
+        // // Eg 1}
+        // var a = 1;
+        // while(a<=10){
+        //     document.write("<br>"+a);
+        //     a++;
+        // }
+
+        // // 2}
+        // var a=500;
+        // while(a>=1){
+        //     document.write("<br>"+a);
+        //     a--;
+        // }
+
+        // // 3}
+        // var a=1;
+        // while(a<=10){
+        //     document.write("<br>"+(9*a));
+        //     a++;
+        // }
+
+        // var a=9;
+        // var b=1;
+        // while(b<=10){
+        //     document.write("<br>"+a*b);
+        //     b++;
+        // }
+
+        // // 4} Even Numbers & Sum of Even Numbers  
+        // document.write("Even Numbers ")
+        // var i=1;
+        // var sum = 0;
+        // while(i<=100){
+        //     if(i%2==0){
+        //     document.write("<br>"+i);
+        //     sum=sum+i;
+        //     if(i==100){
+        //         document.write("<br> Sum of Even Numbers : "+sum);  // 2550
+        //     }
+        //     }
+        //     i++;
+        // }
+
+        // // 5}
+        // document.write("Odd Numbers")
+        // var j = 1;
+        // var sum = 0;
+        // while(j<=100){
+        //     if(j%2!=0){
+        //         document.write("<br>"+j);
+        //         sum+=j;
+        //     }
+        //     j++;
+        // }
+        // document.write("<br>Sum of Odd numbers : "+sum);   // 2500
+
+        // // 6} Day names
+        // var day = 1;
+        // switch(day){
+        //     case 1:
+        //         document.write("Sunday");
+        //         break;
+        //     case 2:
+        //         document.write("Monday");
+        //         break;
+        //     case 3:
+        //         document.write("Tuesday");
+        //         break;
+        //     case 4:
+        //         document.write("Wednesday");
+        //         break;
+        //     case 5:
+        //         document.write("Thursday");
+        //         break;
+        //     case 6:
+        //         document.write("Friday");
+        //         break;
+        //     case 7:
+        //         document.write("Saturday");
+        //         break;
+        //     default:
+        //         document.write("Invalid Day");
+        //         break;
+        // }
+
+        // // 7} Month names
+        // var No = 1;
+        // switch (No){
+        //     case 1:
+        //         document.write("January");
+        //         break;
+        //     case 2: 
+        //         document.write("February");
+        //         break;
+        //     case 3:
+        //         document.write("March");
+        //         break;
+        //     case 4:
+        //         document.write("April");
+        //         break;
+        //     case 5:
+        //         document.write("May");
+        //         break;
+        //     case 6:
+        //         document.write("June");
+        //         break;
+        //     case 7:
+        //         document.write("July");
+        //         break;
+        //     case 8:
+        //         document.write("August");
+        //         break;
+        //     case 9:
+        //         document.write("September");
+        //         break;
+        //     case 10:
+        //         document.write("October");
+        //         break;
+        //     case 11:
+        //         document.write("November");
+        //         break;
+        //     case 12:
+        //         document.write("December");
+        //         break;
+        //     default:
+        //         document.write("Invalid Date");
+        //         break;
+        // }
+
+        //---------------------------------------
+
+        // // 4} Nested While loop
+        /*
+        syntax
+                 initialization
+                 while(condition){
+                    while(Condition){
+
+                    }
+                 }
+        */
+
+        // // Eg 1}
+        // var a = 1;
+        // while(a<=100){
+        //     document.write("<h1>"+a+"<h1>");
+        //     var b = 1;
+        //     while(b<=10){
+        //         document.write("<br><h5>"+b);
+        //         b++;
+        //     }
+        //     a++;
+        // }
+        
+//-----------------------------------------------------
+
+        // do while loop
+        /*
+        do{
+            //statement
+            inc or dec
+        }while(condition);
+
+        */
+
+        // // Eg 1}  print 1-100 num
+        // var a=1;
+        // do{
+        //     document.write("<br>"+a)
+        //     a++;
+        // }while(a<=100);
+
+        // // Eg 2} Num 1-500 Even & Add
+        // var a = 1;
+        // var sum = 0;
+        // do{
+        //     if(a%2==0){
+        //         document.write("<br>"+a);
+        //         sum+=a;
+        //     }
+        //     a++;
+        //     if(a>500){
+        //         document.write("<br>"+sum);   
+        //     }
+        // }while(a<=500);
+
+        // // Eg 3} Num 1-500 Odd & Add
+        // var a = 1;
+        // var sum = 0;
+        // document.write("1-500 Odd Numbers : ");
+        // do{
+        //     if(a%2!=0){
+        //         document.write("<br>"+a);
+        //         sum+=a;
+        //     }
+        //     a++;
+        //     if(a>500){
+        //         document.write("<br>Sum of Odd Numbers : "+sum);
+        //     }
+        // }while(a<=500);
+
+        // // Eg 4}
+        // var a = 100;
+        // do{
+        //     document.write("<br>"+a);
+        //     a--;
+        // }while(a>=1);
+
+        // // Eg 5}
+        // var a = 1;
+        // do{
+        //     document.write("<br>"+6*a);
+        //     a++;
+        // }while(a<=10);
+
+        // // Table print 2-30 using HTML table
+        
+    </script>
+<!-- ------------------------------------------------------------ -->
+
+
+    <table border="1" width="100%">
+        <!--<script type="text/javascript">
+
+            
+        // // Solved Home work     10-11-22
+            
+        // // 2-30 tables in single row using HTML table
+
+        var a = 2;
+        document.write("<tr>")
+        while(a<=30){
+           //document.write("<br>Tabal "+a);
+            var b= 1;
+            document.write("<td>")
+            while(b<=10){
+                var c = a * b;
+                document.write("<br>"+c+"");
+                b++;
+            }
+            document.write("</td>")
+            a++;
+        }
+        document.write("</tr>")
+        </script>
+    </table> -->
+
+
+    <!-- <table border="1" width="100%">
+        <script type="text/javascript">
+
+        // // 2-30 Tables using html table
+            var a=1;
+            while(a<=10){
+                var b=2;
+                document.write("<tr>");
+                while(b<=30){
+                    var c = a*b;
+                    document.write("<td>"+c+"</td>");
+                    b++;
+                }
+                a++;
+                document.write("</tr>");
+            }
+        </script> -->
+
+
+<!-- 
+        <script border="1" width="100%">
+
+        // // 1-100 Natural No. using HTML table
+            var a = 1;
+            while(a<=10){
+                document.write("<tr>");
+                    var b=0;
+                    while(b<91){
+                        var c=a+b;
+                        document.write("<td>"+c+"</td>");
+                        b+=10;
+                    }
+                document.write("</tr>");
+                a++;
+            }
+        </script> -->
+
+        
+
+        <script type="text/javascript">
+
+        // //2-30 tables using HTML table
+            var a=1;//1
+            while(a<=10){//T
+                var b=2;//2
+                document.write("<tr>")//---
+                while(b<=30){//T
+                    var c=a*b;//1*2
+                    document.write("<td>"+c+"</td>");//[2]
+                    b++;//3
+                }
+                a++;//2
+                document.write("</tr>")//New row
+            }
+        </script>
+    </table>
+</body>
+</html>

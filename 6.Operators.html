@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Operators   --->
+        
+        //  1} Arithmetic Operators  +,-,*,/,%
+
+        // var  a=10;
+        // var  b=20;
+        // var  c=a+b;           // addition          10 + 20 = 30
+        // document.write(c);
+        // var  d=a-b;           // substraction      10 - 20 = -10
+        // document.write(d);
+        // var  e=a*b;           // multiplication    10 * 20 = 200
+        // document.write(e);
+        // var  f=a/b;           // division          10 / 20 = 0.5
+        // document.write(f);
+        // var  g=a%b;           // modulo            10 % 20 = 10
+        // document.write(g);
+ //------------------------------------------------------------------
+
+        // 2} Assignment Operators   =,+=,-=,*=,/=,%=
+        // var p=0;
+        // p+=10;  // plus equal to  left val = left val + right val
+        // p+=30;
+        // p+=50;
+        // document.write(p);
+
+        // var a = 10;
+        // var b = 20;
+        // a+=b;            // 10=10+20      30   plus equal to
+        // a-=b;            // 10=10-20     -10   minus equal to
+        // a*=b;            // 10=10*20      200  multiply equal to
+        // a/=b;            // 10=10/20      20   divide equal to
+        // a%=b;            // 10=10%20      0   mode equal to
+        // document.write(a)
+
+ //------------------------------------------------------------------
+
+        // Increament  operator ++  , Decreament operator --
+        // var a = 20;
+        // a++;                      //21
+        // ++a;                      //22
+        // document.write(a++)       //22    first print value the incriment
+        // document.write(++a);        //24
+
+
+        // var dd = 50;
+        // --dd;  //49
+        // dd++;  //49
+        // dd--;  //50
+        // dd--;  //49
+        // --dd;  //47
+        // document.write(dd--);        //47
+        // document.write(dd--);        //47
+        // document.write(++dd);        //48
+        // document.write(--dd);        //46
+        // document.write(--dd);        //46
+        // document.write(dd++);        //47
+        // document.write(dd--);        //47
+
+
+
+        // var vv=1000;
+        // vv+=50;                           //1050
+        // vv++;                             //1051
+        // --vv;                             //1050
+        // document.write(vv);               //1050
+        // var vv=vv*vv+100;                 //1102600
+        // --vv;                             //1102599
+        // vv--;                             //1102598
+        // vv++;                             //1102599
+        // vv%=10;                           //99
+        // document.write(vv);               //99
+
+        // //Prefix = ++a
+        // //Postfix = a++
+//----------------------------------------------------------------
+
+        // Comparision Operator
+        // var a=20;
+        // var b='20';
+        // alert(a==b); //true
+        // alert(a==15);//false
+        // alert(a===b);//false (number)20===20(string)
+        // alert(a===20);//true
+        // alert(20<20);//false
+        // alert(19<20);//true
+
+        // alert(20>20);//false
+        // alert(21>20);//true
+        
+        // alert(20<=20);//true
+        // alert(2<=20);//true
+        // alert(200<=20);//false
+
+        // alert(20>=20);//true
+        // alert(20>=2);//true
+        // alert(20>=200);//false
+        
+        // alert(20!=20);//false
+        // alert(19!=20);//true
+//-------------------------------------------------------------
+
+        //Logical Operator
+        // && || !
+        // alert(10<20 && 30>10);//true
+        //     // &&
+        //     //T T = T
+        //     // false
+        // alert(10<20 || 3>30);//true
+        //     // ||
+        //     // F F = F
+        //     // true
+        // alert(!(10==10));//false       true=false    false=true
+        // // !
+        // //T = F
+        // //F = T
+//------------------------------------------------------------------
+
+        // Concatination Operator
+        // +
+        // var fname="Jayad";
+        // var lname="Pathan";
+        // document.write("my First name is "+fname+" & my last name is "+lname);
+        // document.write("<br>"+lname);
+
+//----------------------------------------------------------------
+
+        // Ternary Operator
+        // (condition) ? true : false;
+        // var a=(10==10)?"correct":"false";
+        // document.write(a);
+
+//----------------------------------------------------------------
+
+
+        //     2^7   2^6   2^5   2^4   2^3  2^2   2^1   2^0
+        //     128    64    32    16    8    4    2     1 
+        // 11   0      0     0    0     1    0    1     1
+        // 12   0      0     0    0     1    0    0     0
+
+
+        // Bitwise Operator  & , | , ^ , ~
+        // & (bitwise and), | (bitwise or), ^ (bitwise xor), ~ (bitwise not)
+        // 1} & (bitwise and)  T - T = T   otherwise F
+
+//         var a=11;                     //0000 1011  
+//         var b=12;                     //0000 1100        
+//         document.write(a&b);    //8     0000 1000
+
+
+//          // 2} | (bitwise or)  F - F = F   otherwise T
+
+//         var a=11;                     //0000 1011  
+//         var b=12;                     //0000 1100        
+//         document.write(a|b);    //15    0000 1111
+
+
+//          // 3} ^ (bitwise xor)  F - F = F  or  T - T = F   otherwise T
+
+//         var a=11;                     //0000 1011  
+//         var b=12;                     //0000 1100        
+//         document.write(a^b);    //7     0000 0111
+
+        
+//         // 4} ~ (bitwise not)  T = F   or   F = T   first bit not in result 
+
+//         var a=11;                       //0000 1011  
+//         document.write(~a);    //-12      1111 0011     
+
+//         var b=12;                       //0000 1100
+//         document.write(~b);    //-13      1111 0011  
+//        // first bit of result is 1 so number will be negative
+
+
+//        // 5} << (bitwise left shift)  (zero fill) 0 add right side lastbit off
+//         var a=11;                          //0000 1011 
+//         document.write(a<<1);       // 22    0001 0110
+
+//         var b=12;                          //0000 1100
+//         document.write(b<<1);       // 24    0001 1000
+
+
+
+//         // 6} >> (bitwise right shift)  (zero fill) 0 add left side lastbit off
+//         var a=11;                          //0000 1011 
+//         document.write(a>>1);       // 5     0000 0101
+
+//         var b=12;                          //0000 1100
+//         document.write(b>>1);       // 6     0000 0110
+
+
+
+//-------------------------------------------------------------------
+           // solve Question Bank Question  5-11-22
+
+           // 1}
+           var my_num=10;
+           var my_bool=true;
+           var my_str="String"
+            document.write(my_num,my_bool,my_str);  //10 true String
+
+           // 2}
+           document.write(5000+225+"7000");  //52257000
+
+              // 3}
+              var sub1=35;
+              var sub2=34;
+              var sub3=99; 
+              var sub4=60;
+              var sub6=47;
+              alert(sub1>=35 && sub2>=30 && sub6>=40 && sub4<=70 && sub3>=50 || sub6<=50); //true
+
+              // 4}
+              var a=true;
+              var a=false;
+              var a=1;
+              if(a){
+                let ab="Welcome javascript Que. Bank"
+              }
+              document.write(ab);  //Cannot print because of Scope of ab 
+
+                 // 5}
+                 var total='5000';
+                 var dis=10;
+                 var coupan=`20`;
+                 var distotal=total*dis/100-coupan;       //480
+                 document.write(total-distotal+"<br>");   //4220
+                 document.write(total);                   //5000
+
+                 // 6}
+                 var a2=99;
+                 var b2=40;
+                 var c2=35;
+                 var d2=99;
+                 var e2=55;
+                 var f2=62;
+                 var tot=((((a2+b2+c2)+d2)+e2)+f2);      //390
+                 var per=tot/6;                          //65
+                 alert(per<=100 && per>=35);             //true
+
+                // 7}
+                var sugar=200.20;
+                var milk=0.25;
+                var oil=45;
+                var groundnut=35;
+                var total;
+                total+=sugar;
+                total+=milk;
+                total+=oil;
+                total+=groundnut;
+                document.write(total++)
+                var tax=total*12/100;
+                var net_tot=total+tax;
+                document.write(`<br> Total payment=${net_tot}`);     //NaN
+
+                // 8}
+                var totalqnt=100;
+                var rate=1000;
+                var totrate=totalqnt*rate;
+                var transport=5;
+                var tcharge=(totrate*transport)/100;
+                var marketcharge=10;
+                var mcharge=totrate*marketcharge/100;
+                var portage=2;
+                var pcharge=totrate*portage/100;
+                var trqader=4;
+                var vcharge=totrate*trader/100;
+                totalbill=totrate-(tcharge+mcharge+pcharge+vcharge);
+                document.write("Total Bill = "+totrate+"<br>");
+                document.write("Trader Charge = "+vcharge+"<br>");
+                document.write("Portage Charge = "+pcharge+"<br>");
+                document.write("Marketcharge Charge = "+mcharge+"<br>");
+                document.write("Transport Charge = "+tcharge+"<br>");
+                document.write("Net Bill = "+totalbill+"<br>");
+
+                
+           
+
+
+
+ //------------------------------------------------------------------
+
+    </script>
+</body>
+</html>

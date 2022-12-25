@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        var a = "jayad";
+        document.write(a);
+        alert(a);
+        console.log(a);
+        
+
+        /*
+        Rules to define variables in js
+        !=
+        123  do not write varible as only number
+        
+        but allows 
+        _123
+        a123
+        $123
+        */
+
+        var b = 2;  // case sensitive b != B 
+        var B = 2;  // both are differents
+
+        var val1 = 10;
+        var val2 = 20;
+        var total = val1 + val2;
+        document.write( total);
+
+
+        // keyword to create varibale  var, let, const
+        //1} var  --> globaly access
+        var alpha = 10;
+        if (true){
+            var bita = 20;
+        }
+        document.write(alpha);
+        document.write(bita);
+
+        //2} let --> local access
+        let alpha1 = 10;  // we access in scope 
+        if (true){
+            let bita1 = 20; // we cannot access bita1 variable otside the scope
+        }
+        document.write(alpha1)
+        document.write(bita1)
+        
+
+        //3} const  --> unique varible
+        //we cannot create double same name variable its unique
+        
+        /*
+        const alpha2 = 10;
+        const alpha2 = 20;
+
+        document.write(alpha2)
+        document.write(alpha2)
+        */
+        const al = 123;
+        document.write(al);
+        
+    </script>
+
+</body>
+</html>

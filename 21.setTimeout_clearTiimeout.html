@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <img src="../CSS/nimage.jpg" style="height: 200px; width:200px; ">
+    <button onclick="start1()">Start</button>
+    <button onclick="stop1()">Stop</button>
+    <script type="text/javascript">
+        var id="";
+        function start1(){
+            id=setTimeout(demo,5000);
+        }
+        function stop1(){
+            clearTimeout(id);
+        }
+        function demo(){
+            document.getElementsByTagName('img')[0].style="border-radius:50%;height:200px; width:200px;"
+        }
+    </script>
+</body>
+</html>

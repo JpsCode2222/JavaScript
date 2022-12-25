@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+</head>
+<!-- <body style="height: 1000px; width:100%" onresize="resize()" onload="resize()" onscroll="scroll()">
+    <form action="save.html" onsubmit="return confirm('are u sure')">
+        <input type="text" id="name" onfocus="focus1('name')"  onblur="blur1('name')" onselect="select('name')" placeholder="Name"><br>
+    <input type="text" id="email" onfocus="focus2('email')"  onblur="blur1('email')" onselect="select('email')" placeholder="Name"><br>
+    <input type="text" id="mobile" onfocus="focus3('mobile')"  onblur="blur1('mobile')" onselect="select('mobile')" placeholder="Name"><br>
+    <select onchange="change()" id="sele">
+        <option>Choose</option>
+        <option>Data1</option>
+        <option>Data2</option>
+        <option>Data3</option>
+    </select>
+    <button>Submite</button>
+    </form>
+    <script type="text/javascript">
+        function resize(){
+            alert("Resize");
+        }
+        function scroll(){
+            alert("Scroll");
+        }
+        function focus1(a){
+            document.getElementById(a).style.background="blue";
+        }
+        function blur1(a){
+            document.getElementById(a).style.background="red";
+        }
+        function select(){
+            document.getElementById('name').style.background="green";
+        }
+        function change(){
+            document.getElementById('sele').style.background="Green";
+        }
+    </script>
+ 
+    <input type="text" id="name" onfocus="focus('name')" placeholder="Name"><br>
+    <input type="text" id="email" onfocus="focus('email')" placeholder="Email"><br>
+    <input type="text" id="mobile" onfocus="focus('mobile')" placeholder="Mobile"><br>
+    <script type="text/javascript">
+        function focus(a){
+            document.getElementById(a).style.background="pink";
+        }
+    </script> 
+
+</body> -->
+<body>
+    <input type="text" placeholder="Name" onfocus="fun1('name')" onblur="fun2('name')"  id="name"><br><br>
+    <input type="text" placeholder="Email"  onfocus="fun1('email')" onblur="fun2('email')" id="email"><br><br>
+    <script type="text/javascript">
+        function fun1(a){
+            document.getElementById(a).style.background="red";
+        }
+        function fun2(a){
+            document.getElementById(a).style.background="pink";
+        }
+    </script>
+</body>
+</html>

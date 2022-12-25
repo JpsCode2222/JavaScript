@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style type="text/css">
+        #box{
+            height: 300px;
+            width: 100%;
+            float: left;
+            background-color: blue;
+        }
+    </style>
+</head>
+<!-- <body>
+    <div id="box" onclick="color()" ondblclick="dblclick()" oncontextmenu="context()" onmouseover="mouseover()" onmouseout="mouseout()"></div>
+    <script type="text/javascript">
+        // Mouse Events 
+        // 1 onclick
+        function color(){
+        document.getElementById('box').style.background="orange";
+        }
+         
+        // 2 ondblclick
+        function dblclick(){
+            document.getElementById('box').style.background="red";
+        }
+        
+        // 3 oncontextmunu
+        function context(){
+            document.getElementById('box').style.background="black";
+        }
+
+        // 4 onmouseover ---- onmouseenter
+        function mouseover(){
+            document.getElementById('box').style.background="purple";
+        }
+
+        // 5 onmouseout ----- onmouseleave
+        function mouseout(){
+            document.getElementById('box').style.background="brown";
+        }
+    </script>
+</body>
+-->
+
+<body>
+    <br><br><br>
+    <input type="number" placeholder="num1" id="num1"><br>
+    <input type="number" placeholder="num1" id="num2"><br>
+    <br>
+    <br>
+    <button onclick="add(num1.value,num2.value)">+</button>
+    <button onclick="sum(num1.value,num2.value)">-</button>
+    <button onclick="mul(num1.value,num2.value)">*</button>
+    <br>
+    <br>
+    <input type="number" name="" id="total" placeholder="Total" readonly>
+
+    <script type="text/javascript">
+        function add(a,b){
+            var c = Number(a)+Number(b);
+            document.getElementById('total').value=c;
+        }
+        function sum(a,b){
+            var c = Number(a)-Number(b);
+            document.getElementById('total').value=c;
+        }
+        function mul(a,b){
+            var c = Number(a)*Number(b);
+            document.getElementById('total').value=c;
+        }
+    </script>
+</body>
+</html>
